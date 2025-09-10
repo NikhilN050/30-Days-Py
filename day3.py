@@ -68,3 +68,63 @@ b = 20
 total(a,b)
 '''
 # Task 10 – Prime Checker
+"""
+def prime(n):
+    if n <= 1:
+         return False
+    for i in range(2,n):
+         if n % i == 0:
+              return False
+    return True
+print(prime(9))
+"""
+# Task 11 – Factorial Function
+"""
+def factorial(n):
+    i = 1
+    fact = 1
+    while i <= n:
+        fact *= i
+        i += 1
+    print(fact)
+factorial(3)
+"""
+# Task 12 – Default Arguments
+"""
+def greet(name="user"):
+    if name == name:
+        print(name)
+    else:
+        print("non")
+    return greet
+greet("nikhil")
+"""
+# Task 13 – Reverse String
+"""
+def reverse(s):
+    return s[::-1]
+print(reverse("python is best"))
+"""
+# Task 14 – Sum & Average of List
+"""
+def sum_avg (numbers):
+    total = sum(numbers)
+    avg = total/len(numbers)
+    return total,avg
+
+nums = [4, 10, 6, 8]
+total,avg = sum_avg(nums)
+print("sum",total)
+print("average",avg)
+"""
+# Task 15 – Local vs Global
+"""
+x = 50 #global
+
+def show():
+    x = 100
+    print("local ",x)
+
+show()
+print("global",x)
+"""
